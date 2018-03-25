@@ -1,0 +1,10 @@
+; nasm -f elf64 -F dwarf test-gdb-nums.a
+; ld -o test-gdb-nums test-gdb-nums.o
+
+global _start
+
+section .text
+_start:
+
+mov rax, 9099
+mov rbx, 555

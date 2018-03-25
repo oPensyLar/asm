@@ -1,0 +1,22 @@
+; nasm -f elf64 -F dwarf test-gdb-string.a
+; ld -o test-gdb-string test-gdb-string.o
+
+
+section .text
+
+global _start
+
+
+_start:
+	
+
+mov rbx, txt
+
+mov rbx, 0
+mov rax, 1
+int 0x80
+
+
+
+section .data
+	txt db 'oPen syLar', 0
