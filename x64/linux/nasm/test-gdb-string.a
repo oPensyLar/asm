@@ -1,7 +1,3 @@
-; nasm -f elf64 -F dwarf test-gdb-string.a
-; ld -o test-gdb-string test-gdb-string.o
-
-
 section .text
 
 global _start
